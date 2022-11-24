@@ -1,0 +1,87 @@
+.location-button{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.location-map{
+
+    img{
+        display: block;
+    }
+}
+
+.location-section-1{
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.location-section-2{
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 50px 16px;
+
+    background-color: $black;
+    color: $white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    h4{
+        color: $orange;
+        text-transform: uppercase;
+    }
+
+    .inner-location-section-2{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.footer-bg{
+    background-color: $orange ;
+    color: $black;
+
+}
+
+
+    @media screen and (min-width: 768px) {
+
+        .location-button{
+            left: 40px;
+        }
+
+        .location-section-2{
+            padding: 80px 40px;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 68px;
+
+            :nth-child(1){
+                max-width: 200px;
+            }
+            :nth-child(3){
+                max-width: 500px;
+            }
+        }
+
+    }
+
+
+
+
+
+    @media screen and (min-width: 1024px) {
+
+        .location-button{
+            left: 165px;
+        }
+
+        .location-section-2{
+            padding: 100px 165px;
+        }
+
+    }
